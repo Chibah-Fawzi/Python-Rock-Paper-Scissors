@@ -3,9 +3,10 @@ from random import randint
 rps = ["Rock", "Paper", "Scissors"]
 
 computer = rps[randint(0,2)]
-player = False
-while player == False:
+player = True
+while player == True:    
     player = input("Rock, Paper, Scissors?")
+    print("Welcome to the rock, paper, scissors game!")
     if player == computer:
         print("Draw")
     
@@ -26,22 +27,4 @@ while player == False:
         else:
             print(f"computer used {computer} so you win")
     else:
-        print("thats not a valid player")
-player=False
-computer=rps[randint(0,2)]
-
-
-
-
-
-
-
-
-# if comp == r and y == s:
-#     print("You win")
-#     elif x = r and y = p:
-#         print("You lose")
-#         elif x = s and y = p:
-#             print("You win")
-#             elif x = y:
-#                 print("DRAW")
+        print("thats not a valid player")      
